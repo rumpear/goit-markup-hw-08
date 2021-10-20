@@ -99,6 +99,14 @@
 
 .modal-form__field {
   margin-bottom: 10px;
+
+  &:focus-within .modal-form__input {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+  &:focus-within .modal-form__icon {
+    fill: $accent-color;
+  }
 }
 
 .modal-form__label {
@@ -143,14 +151,14 @@
   transition: fill 250ms $timing-function;
 }
 
-.modal-form__field:focus-within .modal-form__input {
-  border: 1px solid $accent-color;
-  outline: none;
-}
+// .modal-form__field:focus-within .modal-form__input {
+//   border: 1px solid $accent-color;
+//   outline: none;
+// }
 
-.modal-form__field:focus-within .modal-form__icon {
-  fill: $accent-color;
-}
+// .modal-form__field:focus-within .modal-form__icon {
+//   fill: $accent-color;
+// }
 
 .modal-checkbox {
   display: flex;

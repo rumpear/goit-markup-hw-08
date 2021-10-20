@@ -3,6 +3,11 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .header__logo {

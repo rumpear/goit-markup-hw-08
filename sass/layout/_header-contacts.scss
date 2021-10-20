@@ -1,6 +1,10 @@
 .header-contacts {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header-contacts__item:not(:last-child) {

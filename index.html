@@ -17,17 +17,20 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__content container">           
+        <div class="header__content container">   
+            
+            <!-- DESKTOP NAVIAGATION -->
+            
             <nav class="site-nav">         
                 <a href="index.html" class="logo header__logo"><span class="logo__text">Web</span>Studio</a>
-                    <ul class="site-nav__list list">
-                        <li class="site-nav__item">
-                            <a href="index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-                        <li class="site-nav__item">
-                            <a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
-                        <li class="site-nav__item">
-                            <a href="" class="site-nav__link">Контакты</a></li>
-                    </ul>
+                <ul class="site-nav__list list">
+                    <li class="site-nav__item">
+                        <a href="index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                    <li class="site-nav__item">
+                        <a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item">
+                        <a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
             </nav>
             <ul class="header-contacts list">
                 <li class="header-contacts__item">
@@ -43,6 +46,59 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+
+            <!-- MOBILE NAVIAGATION -->
+
+            <div class="mobile-nav">
+                <button type="button"
+                class="mobile-nav__button js-open-menu" 
+                aria-expanded="false" 
+                aria-controls="mobile-nav__menu">
+                    <svg class="mobile-nav__icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                </button>
+                <div class="mobile-nav__menu js-menu-container" id="mobile-nav__menu">
+                    <button type="button" 
+                    class="mobile-nav__button-close js-close-menu" 
+                    aria-expanded="true" 
+                    aria-controls="mobile-nav__menu">
+                        <svg class="mobile-nav__icon" width="40" height="40">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-nav__navigation list">
+                        <li class="mobile-nav__navigation-item">
+                            <a href="index.html" class="mobile-nav__navigation-link mobile-nav__navigation-link--current">Студия</a>
+                        </li>
+                        <li class="mobile-nav__navigation-item">
+                            <a href="portfolio.html" class="mobile-nav__navigation-link">Портфолио</a>
+                        </li>
+                        <li class="mobile-nav__navigation-item">
+                            <a href="" class="mobile-nav__navigation-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-nav__contacts list">
+                        <li class="mobile-nav__contacts-item">
+                            <a href="tel:+380961111111" class="mobile-nav__contacts-phone"> +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-nav__contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mobile-nav__contacts-mail"> info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-nav__social list">
+                        <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="https://www.instagram.com/">
+                        Instagram </a></li>
+                        <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="https://twitter.com/">
+                        Twitter</a></li>
+                        <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="https://www.facebook.com/">
+                        Facebook</a></li>
+                        <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="https://www.linkedin.com/">
+                        LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </header>
     <main>
@@ -352,7 +408,7 @@
                 <div class="modal-form__field" role="group">
                     <label class="modal-form__label" for="user-name">Имя</label>
                     <span class="modal-form__wrap">
-                        <input class="modal-form__input" type="name" name="user-name" id="user-name">
+                        <input class="modal-form__input" type="text" name="user-name" id="user-name">
                         <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images/sprite.svg#icon-modal-person"></use>
                         </svg>
@@ -397,6 +453,10 @@
     <!-- SCRIPTS -->
 
     <script src="./js/modal.js"></script>
-    <script src="./js/fixed-header.js"></script>
+    <!-- <script src="./js/fixed-header.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </body>
 </html>

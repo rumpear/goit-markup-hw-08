@@ -1,18 +1,24 @@
 .site-nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
 }
 
 .site-nav__list {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav__item {
   position: relative;
-}
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -29,11 +35,10 @@
   &:focus {
     color: $accent-color;
   }
-}
-
-.site-nav__link--current {
-  color: $accent-color;
-  background-color: $primary-white-color;
+  &--current {
+    color: $accent-color;
+    background-color: $primary-white-color;
+  }
 }
 
 .site-nav__link--current::after {
