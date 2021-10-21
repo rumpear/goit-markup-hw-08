@@ -5,6 +5,10 @@
   @media screen and (max-width: 767px) {
     padding: 16px 0;
   }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    // margin-left: auto;
+  }
 }
 
 .site-nav__list {
