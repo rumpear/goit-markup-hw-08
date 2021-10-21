@@ -11,8 +11,10 @@
 }
 
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-contacts__item:not(:last-child) {

@@ -97,7 +97,7 @@ input {
   line-height: 1.19;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 24px;
     line-height: 1.17;
@@ -106,7 +106,12 @@ input {
 
 .header__logo {
   color: #212121;
-  margin-right: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 90px;
+  }
 }
 
 .footer__logo {
@@ -162,16 +167,18 @@ input {
 }
 
 .mobile-nav {
-  position: relative;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
 .mobile-nav__button, .mobile-nav__button-close {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 40px;
+  max-width: 40px;
+  margin-left: auto;
   padding: 0;
   cursor: pointer;
   border: none;
@@ -301,15 +308,18 @@ body {
 }
 
 .header {
+  position: relative;
   background-color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
 }
 
-.header__content {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header__content {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
@@ -532,9 +542,11 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__content {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__adress {
@@ -548,9 +560,11 @@ body {
   margin-right: 70px;
 }
 
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -616,27 +630,35 @@ body {
   margin-left: auto;
 }
 
-.footer-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
 }
 
 .footer-form__email {
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   padding: 16px 15px;
-  margin-right: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   line-height: 1.25;
-  /* display: flex;
-  align-items: center; */
 }
 
 .footer-form__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.25;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__email {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .footer-form__icon {

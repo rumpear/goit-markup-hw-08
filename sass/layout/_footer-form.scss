@@ -4,29 +4,33 @@
 }
 
 .footer-form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-form__email {
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: $primary-bg-color;
 
   padding: 16px 15px;
-  margin-right: 12px;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: $primary-white-color;
   line-height: 1.25;
 
-  /* display: flex;
-  align-items: center; */
-}
-
-.footer-form__email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.25;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .footer-form__icon {
