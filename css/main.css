@@ -376,6 +376,13 @@ body.modal-open {
 .modal-checkbox__text {
   line-height: 1.71;
   color: #757575;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__text {
+    font-size: 14px;
+  }
 }
 
 .modal-checkbox__link {
