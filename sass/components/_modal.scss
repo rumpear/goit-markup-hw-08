@@ -85,17 +85,17 @@ body.modal-open {
   background-color: $primary-white-color;
   transition: background-color 250ms $timing-function;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $accent-color;
+  // }
 }
 
 .modal__icon {
   fill: currentColor;
 
   .modal__button-close:hover & {
-    fill: $primary-white-color;
+    fill: $accent-color;
   }
 }
 
