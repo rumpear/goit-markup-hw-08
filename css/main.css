@@ -205,8 +205,14 @@ input {
 }
 
 .is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: scale(0.9);
   visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
 body.modal-open {
