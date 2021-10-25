@@ -164,19 +164,31 @@
                 <ul class="futures__list list">
                     <li class="futures__item">
                         <div class="futures__thumb">
-                            <img src="./images/box1.jpg" alt="Работа за компьютером 1" width="370">
+                            <picture>
+                                <source srcset="./images/desktop/box1-min.jpg 1x, ./images/desktop/box1@2x-min.jpg 2x" />                                
+                                <img class="futures__img" src="./images/desktop/box1-min.jpg" alt="Работа за компьютером 1" />
+                            </picture>
+                            <!-- <img src="./images/box1.jpg" alt="Работа за компьютером 1" width="370"> -->
                             <p class="futures__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="futures__item">
                         <div class="futures__thumb">
-                            <img src="./images/box2.jpg" alt="Работа за компьютером 2" width="370">
+                            <picture>
+                                <source srcset="./images/desktop/box2-min.jpg 1x, ./images/desktop/box2@2x-min.jpg 2x" />
+                                <img class="futures__img" src="./images/desktop/box2-min.jpg" alt="Работа за компьютером 2" />
+                            </picture>
+                            <!-- <img src="./images/box2.jpg" alt="Работа за компьютером 2" width="370"> -->
                             <p class="futures__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="futures__item">
                         <div class="futures__thumb">
-                            <img src="./images/box3.jpg" alt="Работа за компьютером 3" width="370">
+                            <picture>
+                                <source srcset="./images/desktop/box3-min.jpg 1x, ./images/desktop/box3@2x-min.jpg 2x" />
+                                <img class="futures__img" src="./images/desktop/box3-min.jpg" alt="Работа за компьютером 3" />
+                            </picture>
+                            <!-- <img src="./images/box3.jpg" alt="Работа за компьютером 3" width="370"> -->
                             <p class="futures__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -190,13 +202,16 @@
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
-                    <li class="team__item">
-                        <!-- <img class="team__img" src="./images/team1.jpg" alt="Игорь Демьяненко" width="270"> -->
-                        <!-- <img class="team__img" src="./images/team1.jpg" alt="Игорь Демьяненко" width="270"> -->
-                        <img srcset="../images/mobile/team1-min.jpg 1x, team1@2x-min.jpg 2x" src="../images/mobile/team1-min.jpg" alt="Игорь Демьяненко" width="450"/>
-                        <img srcset="./images/mobile/team1-min.jpg 1x, team1@2x-min.jpg 2x" src="./images/mobile/team1-min.jpg"
-                            alt="Игорь Демьяненко" width="450" />
-
+                    <li class="team__item">                      
+                        <picture>
+                            <source srcset="./images/mobile/team1-min.jpg 1x, ./images/mobile/team1@2x-min.jpg 2x" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/team1-min.jpg 1x, ./images/tablet/team1@2x-min.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/desktop/team1-min.jpg 1x, ./images/desktop/team1@2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img class="team__img" src="./images/desktop/team1-min.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <h3 class="team__item-title">Игорь Демьяненко</h3>
                         <p class="team__item-text">Product Designer</p>
                             <ul class="team-social list">
@@ -223,7 +238,15 @@
                             </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team2.jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <source srcset="./images/mobile/team2-min.jpg 1x, ./images/mobile/team2@2x-min.jpg 2x" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/team2-min.jpg 1x, ./images/tablet/team2@2x-min.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/desktop/team2-min.jpg 1x, ./images/desktop/team2@2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img class="team__img" src="./images/desktop/team2-min.jpg" alt="Ольга Репина" />
+                        </picture>                        
                         <h3 class="team__item-title">Ольга Репина</h3>
                         <p class="team__item-text">Frontend Developer</p>
                         <ul class="team-social list">
@@ -250,7 +273,15 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team3.jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source srcset="./images/mobile/team3-min.jpg 1x, ./images/mobile/team3@2x-min.jpg 2x" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/team3-min.jpg 1x, ./images/tablet/team3@2x-min.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/desktop/team3-min.jpg 1x, ./images/desktop/team3@2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img class="team__img" src="./images/desktop/team3-min.jpg" alt="Николай Тарасов" />
+                        </picture>                        
                         <h3 class="team__item-title">Николай Тарасов</h3>
                         <p class="team__item-text">Marketing</p>
                         <ul class="team-social list">
@@ -277,7 +308,15 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__img" src="./images/team4.jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <source srcset="./images/mobile/team4-min.jpg 1x, ./images/mobile/team4@2x-min.jpg 2x" 
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/tablet/team4-min.jpg 1x, ./images/tablet/team4@2x-min.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/desktop/team4-min.jpg 1x, ./images/desktop/team4@2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img class="team__img" src="./images/desktop/team4-min.jpg" alt="Михаил Ермаков" />
+                        </picture>                        
                         <h3 class="team__item-title">Михаил Ермаков</h3>
                         <p class="team__item-text">UI Designer</p>
                         <ul class="team-social list">
