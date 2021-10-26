@@ -44,9 +44,9 @@
   z-index: 3;
   padding: 48px 40px;
 
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   opacity: 0;
   // pointer-events: none;
@@ -67,7 +67,7 @@
 }
 
 .mobile-nav__navigation {
-  margin-bottom: 302px;
+  // margin-bottom: 302px;
 }
 
 .mobile-nav__navigation-item {
