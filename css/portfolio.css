@@ -447,7 +447,6 @@ body {
 
 .portfolio__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
@@ -455,6 +454,7 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio__list {
     margin-bottom: 30px;
+    justify-content: center;
   }
 }
 
@@ -476,6 +476,12 @@ body {
 
 .work-cards {
   margin: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .work-cards {
+    margin-bottom: -30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -511,6 +517,12 @@ body {
 .work-cards__item {
   margin: 15px;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (max-width: 767px) {
+  .work-cards__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
